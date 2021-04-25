@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TurkceOkulu Regression Suit]">
+  <listeners>
+    <listener class-name="com.qa.school.listeners.ExtentReportListener"/>
+  </listeners>
+  <test name="TurkceOkulu Functional Regression Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.school.test.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="signLanguagePageTest"/>
+        </methods>
+      </class> <!-- com.qa.school.test.LoginPageTest -->
+    </classes>
+  </test> <!-- TurkceOkulu Functional Regression Test(failed) -->
+</suite> <!-- Failed suite [TurkceOkulu Regression Suit] -->
