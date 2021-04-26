@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TurkceOkulu Regression Suit" thread-count="2" parallel = "tests">
+
+	<listeners>
+		<listener class-name="com.qa.school.listeners.ExtentReportListener" />
+	
+	
+	
+	
+	</listeners>
+	
+	<test name="TurkceOkulu Functional Regression Test">
+		<parameter name="browser" value="chrome" />
+
+		<classes>
+			<class name="com.qa.school.test.LoginPageTest" />
+			<class name="com.qa.school.test.HomePageTest" />
+
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
